@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Logo from '../assets/logo.png'
 import Train from '../assets/FrontPgTrain.png'
 import PopUp from '../components/PopUp'
+import Exec from '../components/Exec'
 
 
 export const MainPg = () => {
@@ -58,6 +59,7 @@ export const MainPg = () => {
         </div>
       </header>
       {showPopup && <PopUp />}
+      <Exec />
       <section className="py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
