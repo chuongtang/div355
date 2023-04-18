@@ -4,9 +4,12 @@ import HamMenu from './HamMenu'
 
 const Header = () => {
 
-  const openHamMenu = (e) => {
-    e.preventDefault();
+  const [showHamMenu, setShowHamMenu] = useState(false)
+
+  const openHamMenu = () => {
+    // e.preventDefault();
     console.log('The link was clicked.');
+    setShowHamMenu(!showHamMenu)
   }
   return (
     <div>
@@ -20,16 +23,17 @@ const Header = () => {
 
           </div>
 
-          <button type="button" className="inline-flex p-1 text-black transition-all duration-200 border border-black rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100">
+          <button type="button" className="inline-flex p-1 text-black transition-all duration-200 border border-black rounded-md lg:hidden focus:bg-gray-100 hover:bg-gray-100"
+          onClick={()=>openHamMenu()}>
             {/* <!-- Menu open: "hidden", Menu closed: "block" --> */}
-            <svg className="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {!showHamMenu?<svg className="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            </svg>:<svg height="21" viewBox="0 0 20 20" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"><path d="m10.5 10.5-10-10z"/><path d="m10.5.5-10 10"/></g></svg>}
 
             {/* <!-- Menu open: "block", Menu closed: "hidden" --> */}
-            <svg className="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            {!showHamMenu &&<svg className="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
+            </svg>}
           </button>
 
           <div className="hidden ml-auto lg:flex lg:items-center lg:justify-center lg:space-x-10">
@@ -52,7 +56,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-    <HamMenu/>
+    {showHamMenu &&<HamMenu/>}
     </div>
   )
 }
