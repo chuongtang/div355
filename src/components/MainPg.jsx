@@ -18,10 +18,10 @@ export const MainPg = () => {
     <div className="bg-gradient-to-b from-blue-50 to-bue-100">
       <header className="">
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="animate-pulse flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a href="/" title="" className="flex">
-                <img className="w-auto h-16" src={Logo} alt="Logo" />
+                <img className="animate-pulse w-auto h-16" src={Logo} alt="Logo" />
               </a>
 
             </div>

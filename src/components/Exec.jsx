@@ -200,7 +200,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium"> Engineer Reps </span>
+                <span className="text-sm font-medium"> Conductor Reps </span>
               </div>
 
               <span className="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -239,7 +239,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium">Local Chairman -  JP Baril  (403-827-1103) </span>
+                <span className="text-sm font-medium">Local Chairman -  Ever Kelly (587-435-0199) </span>
               </a>
 
               <a
@@ -284,7 +284,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                  <span className="text-sm font-medium"> -  Jordan Gillis </span>
+                  <span className="text-sm font-medium"> Vice Local Chair -  Tim Stokes </span>
                 </button>
               </form>
             </nav>
@@ -310,7 +310,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium"> Engineer Reps </span>
+                <span className="text-sm font-medium"> Trainmen Reps </span>
               </div>
 
               <span className="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -349,7 +349,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium">Local Chairman -  JP Baril  (403-827-1103) </span>
+                <span className="text-sm font-medium">Local Chairman -  Micheal Nilsson (587-893-9100) </span>
               </a>
 
               <a
@@ -371,7 +371,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium">Vice Local Chair -  Steven Joyce </span>
+                <span className="text-sm font-medium">Vice Local Chair -  Chris Merke </span>
               </a>
 
               <form action="/logout">
@@ -394,7 +394,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                  <span className="text-sm font-medium"> -  Jordan Gillis </span>
+                  <span className="text-sm font-medium"> Vice Local Chair -  VACANT</span>
                 </button>
               </form>
             </nav>
@@ -420,7 +420,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium"> Engineer Reps </span>
+                <span className="text-sm font-medium"> Yard Reps </span>
               </div>
 
               <span className="shrink-0 transition duration-300 group-open:-rotate-180">
@@ -459,7 +459,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium">Local Chairman -  JP Baril  (403-827-1103) </span>
+                <span className="text-sm font-medium">Local Chairman -  Trent Haug (403-389-1595) </span>
               </a>
 
               <a
@@ -481,7 +481,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                <span className="text-sm font-medium">Vice Local Chair -  Steven Joyce </span>
+                <span className="text-sm font-medium">Vice Local Chair -  Scott Mennie </span>
               </a>
 
               <form action="/logout">
@@ -504,7 +504,7 @@ const Exec = () => {
                   />
                 </svg>
 
-                  <span className="text-sm font-medium"> -  Jordan Gillis </span>
+                  <span className="text-sm font-medium"> Vice Local Chair -  Matthew Gregoris </span>
                 </button>
               </form>
             </nav>
