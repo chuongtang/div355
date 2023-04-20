@@ -44,7 +44,7 @@ const Header = () => {
 
               <div className="w-px h-5 bg-black/20"></div>
 
-              <a href="#" title="" className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80 underline decoration-yellow-400 decoration-4 text-shadow-sm" onClick={() => togglePopUp()}> Executives </a>
+              <a href="#" title="" className="text-base font-semibold text-black transition-all duration-200 hover:text-opacity-80 underline decoration-yellow-400 decoration-4 text-shadow-sm" > Executives </a>
 
 
             </div>
