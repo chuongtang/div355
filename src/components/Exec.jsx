@@ -2,7 +2,8 @@ import React from 'react'
 
 const Exec = ({stateChanger, ...rest}) => {
   return (
-    <div className="overflow-hidden rounded-lg shadow-2xl m-4 flex flex-col justify-between border-r bg-white">
+    <div className="overflow-hidden rounded-lg shadow-2xl m-4 flex flex-col justify-between border-r bg-white"
+    role="alert">
       <div className="px-4 py-6">
         <nav aria-label="Main Nav" className="mt-2 flex flex-col space-y-1">
           <div

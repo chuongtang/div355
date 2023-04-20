@@ -3,6 +3,7 @@ import Train from '../assets/FrontPgTrain.png'
 import PopUp from '../components/PopUp'
 import Exec from '../components/Exec'
 import Header from './Header'
+import Footer from './Footer'
 
 
 export const MainPg = () => {
@@ -17,9 +18,8 @@ export const MainPg = () => {
  
   return (
     <div className="bg-gradient-to-b from-blue-50 to-bue-100">
-      
-      <Header/>
       {showExec && <Exec stateChanger={setShowExec} /> }
+      <Header/>
       <section className="py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
@@ -55,6 +55,7 @@ export const MainPg = () => {
           </div>
         </div>
       </section>
+    <Footer/>
     </div>
   )
 }
