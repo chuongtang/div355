@@ -5,12 +5,14 @@ import Exec from '../components/Exec'
 import Header from './Header'
 import Footer from './Footer'
 import Login from './Login'
+import Register from './Register'
 
 
 export const MainPg = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [showExec, setShowExec] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
   const togglePopUp = () => {
     setShowPopup(true);
     setTimeout(() => {
@@ -23,6 +25,7 @@ export const MainPg = () => {
       {showExec && <Exec stateChanger={setShowExec} /> }
       <Header stateChanger={setShowExec}/>
       {showLogin && <Login />}
+      {showRegister && <Register />}
       <section className="py-10 sm:py-16 lg:py-24">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
