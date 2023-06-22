@@ -71,9 +71,9 @@ const Login = () => {
             <div className="pt-6 pb-6 text-center">
               <p>
                 Don't have an account?
-                <a href="#" className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2">
+                <button className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2">
                   Register here.
-                </a>
+                </button>
               </p>
             </div>
           </div>
