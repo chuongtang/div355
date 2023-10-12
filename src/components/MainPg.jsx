@@ -12,7 +12,7 @@ export const MainPg = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [showExec, setShowExec] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
-  const [showRegister, setShowRegister] = useState(true);
+  const [showRegister, setShowRegister] = useState(false);
   const togglePopUp = () => {
     setShowPopup(true);
     setTimeout(() => {

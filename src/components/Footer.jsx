@@ -12,9 +12,9 @@ const Footer = () => {
               </a>
       </div>
 
-      <p className="text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
+      <p className="text-center text-xs text-gray-500 lg:mt-0 lg:text-right">
         Copyright &copy; 2023. Built by <a href="https://chuongtang.com"
-        className='underline italic decoration-yellow-500 decoration-4 text-shadow-sm'
+        className='underline italic decoration-yellow-500 decoration-2 text-shadow-xs'
         target="_blank">an avid member</a>
       </p>
     </div>
