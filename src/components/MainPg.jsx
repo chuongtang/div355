@@ -7,6 +7,7 @@ import Footer from './Footer'
 import Login from './Login'
 import Register from './Register'
 import Meeting from './Meeting'
+import Navbar from './Navbar'
 
 
 export const MainPg = () => {
@@ -25,8 +26,9 @@ export const MainPg = () => {
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-bue-100">
+      <Navbar />
       {showExec && <Exec stateChanger={setShowExec} />}
-      <Header stateChanger={setShowExec} />
+      {/* <Header stateChanger={setShowExec} /> */}
       {showLogin && <Login />}
       {showRegister && <Register />}
       <section className="py-10 sm:py-16 lg:py-24">
