@@ -1,13 +1,18 @@
-
-import { MainPg } from './components/MainPg'
+import { Routes, Route } from 'react-router-dom';
+import { MainPg } from './components/MainPg';
+import  Exec  from './components/Exec';
 
 function App() {
 
 
   return (
-    <div>
-      <MainPg/>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<MainPg />} />
+        {/* <Route path="/Exec" element={<Exec />} /> */}
+        {/* <Route path="/about" element={<About />} /> */}
+      </Routes>
+    </>
   )
 }
 

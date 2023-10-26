@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Train from '../assets/FrontPgTrain.png'
-import PopUp from '../components/PopUp'
+// import PopUp from '../components/PopUp'
 import Exec from '../components/Exec'
-import Header from './Header'
 import Footer from './Footer'
 import Login from './Login'
 import Register from './Register'
@@ -26,7 +25,7 @@ export const MainPg = () => {
 
   return (
     <div className="bg-gradient-to-b from-blue-50 to-bue-100">
-      <Navbar />
+      <Navbar stateChanger={setShowExec} />
       {showExec && <Exec stateChanger={setShowExec} />}
       {/* <Header stateChanger={setShowExec} /> */}
       {showLogin && <Login />}

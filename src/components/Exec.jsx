@@ -533,8 +533,6 @@ const Exec = ({ stateChanger, ...rest }) => {
         </div>
       </div> */}
     </div>
-
-
   )
 }
-export default Exec
+export default Exec;
