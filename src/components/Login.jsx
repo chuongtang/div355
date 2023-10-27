@@ -1,13 +1,12 @@
 import React from 'react'
 import LoginTrain from '../assets/LoginTrain.jpg'
 
-const Login = () => {
+const Login = ({ setShowLogin }) => {
 
   return (
-    <section className="mx-8 rounded-3xl shadow-2xl">
+    <section className="fixed  bg-white z-10 mx-8 rounded-3xl shadow-2xl">
       <div className="flex flex-wrap w-full">
         <div className="flex flex-col w-full md:w-1/2">
-
           <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
             <p className="text-3xl text-center">Welcome.</p>
             <form className="flex flex-col pt-3 md:pt-8">
@@ -63,12 +62,13 @@ const Login = () => {
               <button
                 type="submit"
                 className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-gary-500 transition duration-200 ease-in bg-gray-200 shadow-md hover:text-white hover:bg-black focus:outline-none focus:ring-2"
+                onClick={() => setShowLogin(false)}
               >
                Cancel
               </button>
               </div>
             </form>
-            <div className="pt-6 pb-6 text-center">
+            <div className="py-2 text-center">
               <p>
                 Don't have an account?
                 <button className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2">
@@ -78,9 +78,9 @@ const Login = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 h-1/3 shadow-2xl">
+        <div className="w-1/2 h-1/3 pr-4 pt-4 shadow-2xl">
           <img
-            className="hidden h-full rounded-sm md:block"
+            className="hidden h-full rounded-lg md:block"
             src={LoginTrain}
           />
         </div>
