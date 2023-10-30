@@ -12,7 +12,7 @@ const Navbar2 = ({ stateChanger }) => {
       {showMeeting && <Meeting setShowMeeting={setShowMeeting} />}
       {showUnderConst && <UnderConst setShowUnderConst={setShowUnderConst} />}
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-        <img src={Logo} className="h-12 mr-2" alt="Logo" />
+        <img src={Logo} className="h-12 mr-2 animate-pulse" alt="Logo" />
       </div>
       <div className="block lg:hidden">
         <button
