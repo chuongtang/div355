@@ -1,13 +1,16 @@
 import { useState } from 'react'
 import Logo from '../assets/Logo.png'
 import Meeting from './Meeting'
+import UnderConst from './UnderConst'
 
 const Navbar2 = ({ stateChanger }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showMeeting, setShowMeeting] = useState(false);
+  const [showUnderConst, setShowUnderConst] = useState(false);
   return (
     <nav className="flex items-center justify-between flex-wrap p-6">
       {showMeeting && <Meeting setShowMeeting={setShowMeeting} />}
+      {showUnderConst && <UnderConst setShowUnderConst={setShowUnderConst} />}
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <img src={Logo} className="h-12 mr-2" alt="Logo" />
       </div>
@@ -36,18 +39,20 @@ const Navbar2 = ({ stateChanger }) => {
         className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
       >
         <div className="text-sm lg:flex-grow">
-          <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2">
-            Union documents
-          </a>
           <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2 hover:underline decoration-yellow-500 decoration-2"
             onClick={() => setShowMeeting(true)}>
             Meeting schedule
           </a>
-          <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2">
-            Third Link
+          <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2"
+          onClick={() => setShowUnderConst(true)}>
+            Union documents
           </a>
-          <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2">
-            Fourth Link
+          <a href="/virtual" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2">
+            Online meeing?
+          </a>
+          <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2"
+          onClick={() => setShowUnderConst(true)}>
+            Members Discusion
           </a>
         </div>
         <div>

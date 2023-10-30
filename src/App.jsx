@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { MainPg } from './components/MainPg';
-import  Exec  from './components/Exec';
+import  ZoomSurvey  from './components/ZoomSurvey';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<MainPg />} />
-        {/* <Route path="/Exec" element={<Exec />} /> */}
+        <Route path="/virtual" element={<ZoomSurvey />} />
         {/* <Route path="/about" element={<About />} /> */}
       </Routes>
     </>

@@ -14,8 +14,8 @@ const Footer = () => {
 
           <p className="text-center text-xs text-gray-500 lg:mt-0 lg:text-right">
             Copyright &copy; 2023. Built by <a href="https://chuongtang.com"
-              className='underline italic decoration-yellow-500 decoration-2 text-shadow-xs'
-              target="_blank">an avid member</a>
+              className='underline italic decoration-yellow-500 decoration-1 text-shadow-xs'
+              target="_blank">an avid learner</a>
           </p>
         </div>
       </div>
