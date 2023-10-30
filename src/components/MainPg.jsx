@@ -10,21 +10,21 @@ import Navbar from './Navbar'
 
 
 export const MainPg = ({ stateChanger }) => {
-  const [showPopup, setShowPopup] = useState(false);
+  // const [showPopup, setShowPopup] = useState(false);
   const [showExec, setShowExec] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   const [showMeeting, setShowMeeting] = useState(false);
 
-  const togglePopUp = () => {
-    setShowPopup(true);
-    setTimeout(() => {
-      setShowPopup(false)
-    }, 3000);
-  }
+  // const togglePopUp = () => {
+  //   setShowPopup(true);
+  //   setTimeout(() => {
+  //     setShowPopup(false)
+  //   }, 3000);
+  // }
 
   return (
-    <div className="bg-gradient-to-b from-blue-50 to-bue-100">
+    <div className="bg-gradient-to-b from-blue-50 to-blue-100">
       <Navbar stateChanger={setShowExec} />
       {showExec && <Exec stateChanger={setShowExec} />}
       {showRegister && <Register />}
@@ -42,7 +42,7 @@ export const MainPg = ({ stateChanger }) => {
                 </div>
               </h1>
 
-              <p className="mt-8 text-base text-black sm:text-xl">Proudly serving Conductors, Engineers and Trainpersons employed by Canadian Pacific from Calgary.</p>
+              <p className="mt-8 text-base text-black sm:text-xl">Proudly serving Conductors, Engineers and Trainpersons employed by CPKC from Calgary.</p>
 
               <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
 
