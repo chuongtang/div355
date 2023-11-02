@@ -3,7 +3,7 @@ import Logo from '../assets/Logo.png'
 import Meeting from './Meeting'
 import UnderConst from './UnderConst'
 
-const Navbar2 = ({ stateChanger }) => {
+const Navbar = ({ stateChanger }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showMeeting, setShowMeeting] = useState(false);
   const [showUnderConst, setShowUnderConst] = useState(false);
@@ -43,8 +43,8 @@ const Navbar2 = ({ stateChanger }) => {
             onClick={() => setShowMeeting(true)}>
             Meeting schedule
           </a>
-          <a href="#" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2"
-          onClick={() => setShowUnderConst(true)}>
+          <a href="https://drive.google.com/drive/folders/1ApGqFGzzXVFPvYICfUenm4Y3z3OQmYT6?usp=drive_link" target="_blank" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2"
+          >
             Union documents
           </a>
           <a href="/virtual" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-5 hover:underline decoration-yellow-500 decoration-2">
@@ -65,4 +65,4 @@ const Navbar2 = ({ stateChanger }) => {
   )
 }
 
-export default Navbar2
+export default Navbar

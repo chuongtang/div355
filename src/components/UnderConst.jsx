@@ -3,7 +3,7 @@ import UnderConstruc from '../assets/UnderConstruc.jpg'
 
 const UnderConst = ({ setShowUnderConst }) => {
   return (
-    <div className="fixed inset-x-0 bottom-0 p-4">
+    <div className="fixed inset-x-0 bottom-0 p-4 z-index: 50">
       <div className="relative max-w-xl rounded-lg bg-gray-300 p-6 shadow-sm">
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

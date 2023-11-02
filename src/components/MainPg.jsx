@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Train from '../assets/FrontPgTrain.png'
-// import PopUp from '../components/PopUp'
 import Exec from '../components/Exec'
 import Footer from './Footer'
 import Login from './Login'
@@ -10,19 +9,10 @@ import Navbar from './Navbar'
 
 
 export const MainPg = ({ stateChanger }) => {
-  // const [showPopup, setShowPopup] = useState(false);
   const [showExec, setShowExec] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   const [showMeeting, setShowMeeting] = useState(false);
-
-  // const togglePopUp = () => {
-  //   setShowPopup(true);
-  //   setTimeout(() => {
-  //     setShowPopup(false)
-  //   }, 3000);
-  // }
-
   return (
     <div className="bg-gradient-to-b from-gray-400 to-gray-100">
       <Navbar stateChanger={setShowExec} />
