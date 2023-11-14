@@ -20,7 +20,7 @@ const Meeting = ({ setShowMeeting }) => {
                                 1803 - 14 Ave NE
                             </p>
                             <ul class="list-disc list-inside">
-                                <li>November - 14th, 2023</li>
+                                <li>November - 16th, 2023</li>
                                 <li>December - 12th, 2023</li>
                             </ul>
                             <div className="items-center gap-2 mt-3 sm:flex">

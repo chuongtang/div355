@@ -1,14 +1,38 @@
-import React from 'react'
-import LoginTrain from '../assets/LoginTrain.jpg'
+import React, {useState} from 'react'
+import {useDispatch} from "react-redux"
+import LoginTrain from '../../assets/LoginTrain.jpg'
+import api from '../../appwrite/api'
+import {Link, useNavigate} from "react-router-dom";
+import {login} from "../../redux/userSlice";
 
 const Login = ({ setShowLogin }) => {
 
+
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  let [errors, setErrors] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    api.login(data.get('email'), data.get('password')).then((result) => {
+      // Store logged in 'state' in redux.
+      dispatch(login({
+        account: result.account,
+      }))
+      navigate('/');
+    }).catch((error) => {
+      setErrors(true);
+    });
+  };
+
   return (
-    <section className="fixed  bg-white z-10 mx-8 rounded-3xl shadow-2xl">
+    <section className="bg-white m-8 rounded-3xl shadow-2xl">
       <div className="flex flex-wrap w-full">
         <div className="flex flex-col w-full md:w-1/2">
           <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
-            <p className="text-3xl text-center">👋Display only. This function is being built...</p>
+            <p className="text-3xl text-center">Log in</p>
             <form className="flex flex-col pt-3 md:pt-8">
               <div className="flex flex-col pt-4">
                 <div className="flex relative ">
@@ -53,28 +77,26 @@ const Login = ({ setShowLogin }) => {
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4">
-              <button
-                // type="submit"
-                className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-gray-100 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2 cursor-not-allowed"
-                disabled={true}
-              >
-                Sign in
-              </button>
-              <button
-                type="submit"
-                className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-gray-200 transition duration-200 ease-in bg-orange-400 shadow-md hover:text-white hover:bg-black focus:outline-none focus:ring-2"
-                onClick={() => setShowLogin(false)}
-              >
-               Cancel
-              </button>
+                <button
+                  // type="submit"
+                  className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-gray-100 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
+                  disabled={true}
+                >
+                  Sign in
+                </button>
+                <a href="/"
+                  className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-gray-200 transition duration-200 ease-in bg-orange-400 shadow-md hover:text-white hover:bg-black focus:outline-none focus:ring-2"
+                >
+                  Cancel
+                </a>
               </div>
             </form>
             <div className="py-2 text-center">
               <p>
                 Don't have an account?
-                <button className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2 cursor-not-allowed">
+                <a href="/register" className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2">
                   Register here.
-                </button>
+                </a>
               </p>
             </div>
           </div>
