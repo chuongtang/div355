@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { MainPg } from './components/MainPg';
 import  ZoomSurvey  from './components/ZoomSurvey';
+import  Register  from './components/Register';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPg />} />
         <Route path="/virtual" element={<ZoomSurvey />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/register" element={<Register />} />
       </Routes>
     </>
   )

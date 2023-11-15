@@ -55,7 +55,7 @@ const Login = ({ setShowLogin }) => {
               <div className="grid grid-cols-2 gap-4">
               <button
                 // type="submit"
-                className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-gray-100 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2 cursor-not-allowed"
+                className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-gray-100 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
                 disabled={true}
               >
                 Sign in
@@ -72,9 +72,9 @@ const Login = ({ setShowLogin }) => {
             <div className="py-2 text-center">
               <p>
                 Don't have an account?
-                <button className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2 cursor-not-allowed">
+                <a href='\register' className="ml-2 text-shadow-sm underline decoration-yellow-500 decoration-2">
                   Register here.
-                </button>
+                </a>
               </p>
             </div>
           </div>
