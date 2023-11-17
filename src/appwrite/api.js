@@ -1,9 +1,10 @@
+import { Server } from "./server";
 import { Client, Databases,Account,Functions , ID } from "appwrite";
-// Init your Web SDK
+// Init  Web SDK
 const client = new Client();
 client
-    .setEndpoint('http://localhost/v1') // Your Appwrite Endpoint
-    .setProject(import.meta.VITE_APPWRITE_PROJECT_ID) // Your project ID
+    .setEndpoint('https://cloud.appwrite.io/v1') //  Appwrite Endpoint
+    .setProject(Server.project) //  project ID
 ;
 
 const databases = new Databases(client);
@@ -17,6 +18,7 @@ let api = {
    **/
 
   createAccount: (email, password, name) => {
+    console.log(account)
     return account.create('unique()', email, password, name);
   },
 

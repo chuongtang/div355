@@ -8,7 +8,7 @@ const Login = ({ setShowLogin }) => {
       <div className="flex flex-wrap w-full">
         <div className="flex flex-col w-full md:w-1/2">
           <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
-            <p className="text-3xl text-center">👋Display only. This function is being built...</p>
+            <p className="text-3xl text-center">👋Welcome back</p>
             <form className="flex flex-col pt-3 md:pt-8">
               <div className="flex flex-col pt-4">
                 <div className="flex relative ">
