@@ -31,7 +31,7 @@ let api = {
   },
 
   createSession: (email, password) => {
-    return account.createSession(email, password);
+    return account.createEmailSession(email, password);
   },
 
   deleteCurrentSession: () => {
