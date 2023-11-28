@@ -6,6 +6,7 @@ import Login from './Login'
 import Register from './Register'
 import Meeting from './Meeting'
 import Navbar from './Navbar'
+import { useTypingText } from './TypingTexts/useTypingTexts'
 
 
 export const MainPg = ({ stateChanger }) => {
@@ -13,6 +14,10 @@ export const MainPg = ({ stateChanger }) => {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
   const [showMeeting, setShowMeeting] = useState(false);
+
+  const { word } = useTypingText(
+    ["Conductors", "Engineers", "Trainpersons"],130, 20
+  );
   return (
     <div className="bg-gradient-to-b from-gray-400 to-gray-100">
       <Navbar stateChanger={setShowExec} />
@@ -32,7 +37,7 @@ export const MainPg = ({ stateChanger }) => {
                 </div>
               </h1>
 
-              <p className="mt-8 text-base text-black sm:text-xl">Proudly serving Conductors, Engineers and Trainpersons employed by CPKC from Calgary.</p>
+              <p className="mt-8 text-base text-black sm:text-xl">Proudly serving  <span className="bg-amber-500 p-1 font-bold text-white">{word}</span> employed by CPKC from Calgary.</p>
 
               <div className="mt-10 sm:flex sm:items-center sm:space-x-8">
 
