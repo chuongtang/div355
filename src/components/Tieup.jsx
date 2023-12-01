@@ -14,7 +14,7 @@ const Tieup = () => {
             <h2 className="text-3xl font-bold sm:text-4xl">Reference for tie-up</h2>
 
             <p className="mt-4 text-gray-600">
-              For full CMC tie-up guide, click <a className="text-amber-500" href="/tieup/full.pdf" target="_blank">here</a>
+              For full CMC tie-up guide, click <a className="text-amber-500" type="application/pdf" rel="alternate" src="/src/tieup/full.pdf" target="_blank">here</a>
             </p>
             {/* 
             <a
@@ -28,7 +28,7 @@ const Tieup = () => {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="/tieup/lengrunallowance.pdf"
+              href="/src/tieup/lengrunallowance.pdf"
               target="_blank"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
@@ -44,7 +44,7 @@ const Tieup = () => {
 
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="/tieup/worktrain.pdf"
+              href="/src/tieup/worktrain.pdf"
               target="_blank"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
