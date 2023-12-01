@@ -14,7 +14,7 @@ const Tieup = () => {
             <h2 className="text-3xl font-bold sm:text-4xl">Reference for tie-up</h2>
 
             <p className="mt-4 text-gray-600">
-              For full CMC tie-up guide, click <a className="text-amber-500" type="application/pdf" rel="alternate" src="/full.pdf" target="_blank">here</a>
+              For full CMC tie-up guide, click <a className="text-amber-500"  href="/full.pdf" target="_blank">here</a>
             </p>
             {/* 
             <a
@@ -60,7 +60,7 @@ const Tieup = () => {
 
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="/accountant"
+              href="/reversetcs.pdf" target="_blank"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
               <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)"><path d="m6.5.5h-4c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h10c1.1045695 0 2-.8954305 2-2v-10"/><path d="m10.5 7.5-3 3-3-3"/><path d="m14.5.5h-4c-1.65685425 0-3 1.34314575-3 3v7"/></g></svg>
@@ -75,7 +75,7 @@ const Tieup = () => {
 
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="/accountant"
+              href="/tcspaychart.pdf" target="_blank"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
               <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 4)"><path d="m13.5 4.5h2c.5522847 0 1-.44771525 1-1v-2c0-.55228475-.4477153-1-1-1h-14c-.55228475 0-1 .44771525-1 1v2c0 .55228475.44771525 1 1 1h2"/><path d="m3.5.5h10v11.5c0 .5522847-.4477153 1-1 1h-8c-.55228475 0-1-.4477153-1-1z"/><path d="m6.5 7.5 2 2 2-2"/><path d="m8.5 9.5v-6"/></g></svg>
@@ -90,7 +90,7 @@ const Tieup = () => {
 
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="/accountant"
+              href="/overtime.pdf" target="_blank"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
               <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="matrix(0 1 1 0 0 2)"><path d="m8.54949429 2.5c-2.77910025-.01404818-5.48733216 1.42226095-6.97636172 4.0013358-2.209139 3.826341-.89813776 8.7190642 2.92820323 10.9282032s8.7190642.8981378 10.9282032-2.9282032.8981378-8.71906423-2.9282032-10.92820323" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="m11.5 2.5-3 2.5v-5z" fill="currentColor" fill-rule="nonzero"/><path d="m4.5 10.5h5v3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
@@ -105,7 +105,7 @@ const Tieup = () => {
 
             <a
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="/accountant"
+              href="/over10.pdf" target="_blank"
             >
               <span className="inline-block rounded-lg bg-gray-50 p-3">
               <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 19 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="m8.5 5.5v4h-3.5"/></g></svg>
