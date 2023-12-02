@@ -28,7 +28,7 @@ const Login = ({ setShowLogin }) => {
       <div className="flex flex-wrap w-full">
         <div className="flex flex-col w-full md:w-1/2">
           <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
-            <p className="text-3xl text-center">👋Welcome back</p>
+            <p className="text-3xl text-center animate-bounce">👋Welcome back</p>
             {message && <AlertWarning message={message} />}
             {error && <AlertError message={error} />}
             {loading && <Loader />}
@@ -89,8 +89,7 @@ const Login = ({ setShowLogin }) => {
               <div className="grid grid-cols-2 gap-4">
                 <button
                   type="submit"
-                  className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-gray-100 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
-                  // disabled={true}
+                  className="w-full rounded-xl px-2 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-gray-400 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
                 >
                   Sign in
                 </button>
