@@ -20,7 +20,6 @@ const Login = ({ setShowLogin }) => {
     console.log("login clicked🚶")
     dispatch(login(email, password));
     userInfo && setMessage("Successfully signed in");
-    console.log('\x1b[31m%s\x1b[0m',"userInfoHere", userInfo.name);
   };
 
   return (
