@@ -3,8 +3,9 @@ import { Client, Databases,Account,Functions , ID } from "appwrite";
 // Init  Web SDK
 const client = new Client();
 client
-    .setEndpoint('https://cloud.appwrite.io/v1') //  Appwrite Endpoint
+    .setEndpoint('https://appwrite.div355.win') //  Appwrite Endpoint
     .setProject(Server.project) //  project ID
+    .updateRole('guests', ['account']) // https://devcodef1.com/news/1037888/appwrite-error-user-missing-scope
 ;
 
 const databases = new Databases(client);
@@ -14,7 +15,7 @@ const functions = new Functions(client);
 let api = {
 
   /**
-   * Authentication
+   * Authentications
    **/
 
   createAccount: (email, password, name) => {
@@ -38,14 +39,12 @@ let api = {
     return account.deleteSession('current');
   },
 
-  login: (email, password) => {
-    return api.createSession(email, password).then((session) => {
-      return api.getAccount().then((account) => {
-        return {
-          account: account,
-        };
-      });
-    });
+  login: async (email, password) => {
+    const session = await api.createSession(email, password);
+    const account = await api.getAccount();
+    return {
+      account: account,
+    };
   },
 
   /**
