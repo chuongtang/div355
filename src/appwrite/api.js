@@ -5,7 +5,7 @@ const client = new Client();
 client
     .setEndpoint('https://appwrite.div355.win') //  Appwrite Endpoint
     .setProject(Server.project) //  project ID
-    .updateRole('guests', ['account']) // https://devcodef1.com/news/1037888/appwrite-error-user-missing-scope
+  
 ;
 
 const databases = new Databases(client);
