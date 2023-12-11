@@ -3,7 +3,7 @@ import { Client, Databases,Account,Functions , ID } from "appwrite";
 // Init  Web SDK
 const client = new Client();
 client
-    .setEndpoint('https://appwrite.div355.win') //  Appwrite Endpoint
+    .setEndpoint('https://cloud.appwrite.io/v1') //  Appwrite Endpoint
     .setProject(Server.project) //  project ID
   
 ;
