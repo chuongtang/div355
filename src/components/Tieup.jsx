@@ -117,6 +117,20 @@ const Tieup = () => {
                 A guide for Tie Up Scenarios Involving Over 10 Hours.
               </p>
             </a>
+            <a
+              className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
+              href="/turnedEnroute.pdf" target="_blank"
+            >
+              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m3.22943808 4.22919114c3.26440562-3.78890403 6.68792626-5.03196774 10.27056192-3.72919114-3.55184544.64579008-6.00894821 2.85549827-7.37130831 6.62912456l2.37130831 2.37087544h-8v-8z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"/></svg>
+              </span>
+
+              <h2 className="mt-2 font-bold"> Turned Enroute </h2>
+
+              <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
+              When ordered in straight away service from the Home Terminal and subsequently turned.
+              </p>
+            </a>
           </div>
         </div>
       </div>
