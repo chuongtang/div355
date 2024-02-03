@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cloudflare/itty-router-openapi": "^1.0.6",
     "appwrite": "^13.0.0",
     "dotenv": "^16.3.1",
     "react": "^18.2.0",
@@ -17,7 +18,8 @@
     "react-router-dom": "^6.13.0",
     "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.4.2"
+    "redux-thunk": "^2.4.2",
+    "workers-qb": "^1.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
@@ -25,6 +27,7 @@
     "@vitejs/plugin-react": "^3.1.0",
     "vite": "^4.2.0",
     "vite-plugin-windicss": "^1.8.10",
-    "windicss": "^3.5.6"
+    "windicss": "^3.5.6",
+    "wrangler": "^3.20.0"
   }
 }
