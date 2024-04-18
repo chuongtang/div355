@@ -19,11 +19,7 @@ const Meeting = ({ setShowMeeting }) => {
                                 <br></br>Vista Heights - Maryland Heights
                                 1803 - 14 Ave NE
                             </p>
-                            <ul class="list-disc list-inside">
-                                <li>Jan - 09th, 2024</li>
-                                <li>Feb - 13th, 2024</li>
-                                <li>Mar - 12th, 2024</li>
-                                <li>Apr - 09th, 2024</li>
+                            <ul className="list-disc list-inside">
                                 <li>May - 14th, 2024</li>
                                 <li>Jun - 11th, 2024</li>
                                 <li>Jul - 09th, 2024</li>
@@ -32,14 +28,14 @@ const Meeting = ({ setShowMeeting }) => {
                                 <li>Oct - 08th, 2024*</li>
                                 <li>Nov - 14th, 2024</li>
                                 <li>Dec - 10th, 2024</li>
-                                
+
                             </ul>
                             <div className="items-center gap-2 mt-3 sm:flex">
                                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800"
                                     onClick={() =>
                                         setShowMeeting(false)
                                     }>
-                                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                                    <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                                         OK
                                     </span>
                                 </button>
