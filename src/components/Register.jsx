@@ -42,7 +42,7 @@ const Register = () => {
 
           <div className="m-auto space-y-8 md:w-8/12 lg:w-full">
 
-            {/* <img src={Logo} loading="lazy" className="w-48 ml-4" alt="inselfView logo" /> */}
+            
             <div className="rounded-xl border bg-opacity-50 backdrop-blur-2xl bg-white shadow-xl">
               <div className="lg:grid lg:grid-cols-2">
                 <div className="rounded-lg lg:block" hidden>
